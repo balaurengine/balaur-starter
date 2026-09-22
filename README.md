@@ -53,7 +53,7 @@ curl -X POST https://forge.balaurengine.org/api/v1/forge/projects \
   -H "Content-Type: application/json" \
   -d '{
         "name": "balaur-starter",
-        "repo_url": "https://github.com/appsinacup/balaur-starter",
+        "repo_url": "https://github.com/balaurengine/balaur-starter",
         "targets": ["linux-x64", "windows-x64"]
       }'
 ```
