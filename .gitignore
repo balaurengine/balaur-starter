@@ -1,0 +1,17 @@
+# Export output. A pack, a standalone binary, or a bundle directory — all of
+# them are build products of `balaur export`, and none belongs in the source.
+/game
+/game.exe
+/game.app/
+/game.balaur
+/*-android/
+/*-web/
+*.apk
+*.aab
+*.ipa
+
+# Balaur's local caches and downloaded runtime templates.
+/.balaur/
+/templates/
+
+.DS_Store
