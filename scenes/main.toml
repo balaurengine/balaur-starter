@@ -14,7 +14,7 @@ position = [0, 0, 10]
 
 [nodes.camera2d]
 current = true
-zoom = 48
+pixels_per_unit = 48.0
 
 [[nodes]]
 id = "n_ground"
@@ -26,34 +26,26 @@ body2d = { kind = "static" }
 position = [0, -3, 0]
 
 [nodes.shape2d]
-kind = "rect"
-half_extents = [12, 0.5]
+shape = { kind = "rectangle", size = [24.0, 1.0] }
 color = "#3c4a3a"
 
 [nodes.collider2d]
-kind = "rect"
-half_extents = [12, 0.5]
+shape = { kind = "rectangle", size = [24.0, 1.0] }
 
 [[nodes]]
 id = "n_player"
 name = "Player"
 parent = "n_world"
-script = { source = "scripts/player.rn" }
+script = { source = "scripts/player.bs" }
 
 [nodes.transform]
 position = [0, 0, 0]
 
 [nodes.shape2d]
-kind = "capsule"
-radius = 0.4
-height = 1.2
+shape = { kind = "capsule", radius = 0.4, height = 1.2 }
 color = "#e8c37a"
 
 [nodes.character2d]
-height = 1.2
-radius = 0.4
 
 [nodes.collider2d]
-kind = "capsule"
-radius = 0.4
-height = 1.2
+shape = { kind = "capsule", radius = 0.4, height = 1.2 }

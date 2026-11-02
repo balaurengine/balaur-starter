@@ -12,7 +12,7 @@ a different question.
 ```
 project.toml        name, input actions, export settings
 scenes/main.toml    the scene: ground, player, camera
-scripts/player.rn   left, right, jump
+scripts/player.bs   left, right, jump
 ```
 
 ## Run it
